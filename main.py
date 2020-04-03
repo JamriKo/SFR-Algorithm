@@ -150,7 +150,7 @@ class MyWindow(QMainWindow, sfr_window.Ui_SFR):
 
         self.plot = pg.PlotWidget(enableAutoRange=True)
         self.plot_SFR.addWidget(self.plot)
-        self.curve = self.plot.plot(SFR_x, e_SFR)
+        self.curve = self.plot.plot(SFR_x, SFR)
         self.plot_SFR_title.setText('SFR曲线')
 
 
